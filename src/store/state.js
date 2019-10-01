@@ -3,5 +3,6 @@ import dogs from '../components/data/dogs'
 
 export default {
   cats,
-  dogs
+  dogs,
+  pets: [...cats, ...dogs]
 }

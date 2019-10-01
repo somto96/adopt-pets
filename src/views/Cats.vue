@@ -19,6 +19,7 @@ export default {
   },
   computed: {
     ...mapState(["cats"])
-  }
+  },
+ 
 };
 </script>

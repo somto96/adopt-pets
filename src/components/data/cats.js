@@ -2,6 +2,7 @@
 export default [{
     name: "Roger",
     breed: "Tuxedo",
+    species: "cat",
     gender: "Male",
     age: 10,
     color: "Black and white",
@@ -10,6 +11,7 @@ export default [{
   {
     name: "Henry",
     breed: "Tabby",
+    species: "cat",
     gender: "Male",
     age: 15,
     color: "Black",
@@ -18,6 +20,7 @@ export default [{
   {
     name: "Anita",
     breed: "Tuxedo",
+    species: "cat",
     gender: "Female",
     age: 20,
     color: "White",
