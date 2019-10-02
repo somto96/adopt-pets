@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h1>Adopt a pet today</h1>
     {{getAllCats}} Cats / {{getAllDogs}} Dogs / {{petsCount}} Pets
     <button @click="toggleForm" class="btn btn-primary">Adopt a pet now!</button>
@@ -48,7 +48,6 @@ export default {
       }
     };
   },
-<<<<<<< HEAD
   computed: {
     ...mapGetters([
       'petsCount',
@@ -56,20 +55,13 @@ export default {
       'getAllDogs'
     ])
   },
-=======
->>>>>>> 3343d53b0a63415e439e26e90c3ba45e28bbcf8f
   methods: {
     ...mapActions(["addPet"]),
     toggleForm() {
       this.showForm = !this.showForm;
     },
-<<<<<<< HEAD
     submitHandler() {
       const { name, age, species } = this.form;
-=======
-    handleSubmit() {
-      const { species, name, age } = this.form;
->>>>>>> 3343d53b0a63415e439e26e90c3ba45e28bbcf8f
       const payload = {
         species,
         pet: {
@@ -79,11 +71,7 @@ export default {
       };
       this.addPet(payload);
 
-<<<<<<< HEAD
-      // resets the form
-=======
       // Resets the form after submission
->>>>>>> 3343d53b0a63415e439e26e90c3ba45e28bbcf8f
       this.form = {
         name: "",
         age: 0,
